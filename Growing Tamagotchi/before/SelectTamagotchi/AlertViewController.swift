@@ -79,6 +79,16 @@ class AlertViewController: UIViewController {
     }
     
     @IBAction func cancleButtonClicked(_ sender: UIButton) {
-        self.dismiss(animated: false)
+        self.dismiss(animated: true)
     }
+    
+    @IBAction func startButtonClicked(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "SelectTamagotchi", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: growingTamagotchiViewController.identifier) as! growingTamagotchiViewController
+        
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: false)
+    }
+    
 }

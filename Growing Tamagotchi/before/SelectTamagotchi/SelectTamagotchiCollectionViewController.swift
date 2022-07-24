@@ -46,7 +46,7 @@ class SelectTamagotchiCollectionViewController: UICollectionViewController {
     func designCollectionView() {
         navigationItem.title = "다마고치 선택하기"
         let layout = UICollectionViewFlowLayout()
-        let spacing: CGFloat = 12
+        let spacing: CGFloat = 11
         let width = UIScreen.main.bounds.width - (spacing * 4)
         
         layout.itemSize = CGSize(width: width / 3, height: width / 3)
@@ -70,8 +70,10 @@ class SelectTamagotchiCollectionViewController: UICollectionViewController {
             vc.tamagotchiInfo = tamagotchInfo.info
             
             vc.modalPresentationStyle = .overFullScreen
-            self.present(vc, animated: false)
+            self.present(vc, animated: true)
+            
         } else {
+            self.view.hideAllToasts()
             self.view.makeToast("준비중입니다.")
         }
     }

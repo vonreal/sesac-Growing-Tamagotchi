@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76639F96288D55D6007B2E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76639F95288D55D6007B2E1F /* Main.storyboard */; };
+		76639F98288D58CB007B2E1F /* growingTamagotchiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76639F97288D58CB007B2E1F /* growingTamagotchiViewController.swift */; };
+		76639F9A288D5A22007B2E1F /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76639F99288D5A22007B2E1F /* SettingTableViewController.swift */; };
+		76639F9C288D684C007B2E1F /* Quates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76639F9B288D684C007B2E1F /* Quates.swift */; };
+		76639FA1288D724F007B2E1F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76639FA0288D724F007B2E1F /* IQKeyboardManagerSwift */; };
+		76639FA4288D72A4007B2E1F /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 76639FA3288D72A4007B2E1F /* Toast */; };
+		76639FA6288D7E62007B2E1F /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76639FA5288D7E62007B2E1F /* SettingTableViewCell.swift */; };
+		76639FA8288D83F0007B2E1F /* calculatorLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76639FA7288D83F0007B2E1F /* calculatorLevel.swift */; };
 		76A169AA288A79A7008CC5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169A9288A79A7008CC5C1 /* AppDelegate.swift */; };
 		76A169AC288A79A7008CC5C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169AB288A79A7008CC5C1 /* SceneDelegate.swift */; };
-		76A169AE288A79A7008CC5C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169AD288A79A7008CC5C1 /* ViewController.swift */; };
-		76A169B1288A79A7008CC5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A169AF288A79A7008CC5C1 /* Main.storyboard */; };
 		76A169B3288A79A8008CC5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A169B2288A79A8008CC5C1 /* Assets.xcassets */; };
 		76A169B6288A79A8008CC5C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A169B4288A79A8008CC5C1 /* LaunchScreen.storyboard */; };
 		76A169BE288A8CBA008CC5C1 /* DefaultDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169BD288A8CBA008CC5C1 /* DefaultDesign.swift */; };
@@ -19,15 +25,18 @@
 		76A169C8288A8F05008CC5C1 /* SelectTamagotchiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169C7288A8F05008CC5C1 /* SelectTamagotchiCollectionViewCell.swift */; };
 		76A169CB288AA652008CC5C1 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169CA288AA652008CC5C1 /* AlertViewController.swift */; };
 		76A169CD288AB0DD008CC5C1 /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169CC288AB0DD008CC5C1 /* Tamagotchi.swift */; };
-		76A169D0288AB45D008CC5C1 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 76A169CF288AB45D008CC5C1 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76639F95288D55D6007B2E1F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		76639F97288D58CB007B2E1F /* growingTamagotchiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = growingTamagotchiViewController.swift; sourceTree = "<group>"; };
+		76639F99288D5A22007B2E1F /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		76639F9B288D684C007B2E1F /* Quates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quates.swift; sourceTree = "<group>"; };
+		76639FA5288D7E62007B2E1F /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		76639FA7288D83F0007B2E1F /* calculatorLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorLevel.swift; sourceTree = "<group>"; };
 		76A169A6288A79A7008CC5C1 /* Growing Tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Growing Tamagotchi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A169A9288A79A7008CC5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A169AB288A79A7008CC5C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76A169AD288A79A7008CC5C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		76A169B0288A79A7008CC5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76A169B2288A79A8008CC5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76A169B5288A79A8008CC5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76A169B7288A79A8008CC5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,13 +53,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76A169D0288AB45D008CC5C1 /* Toast in Frameworks */,
+				76639FA4288D72A4007B2E1F /* Toast in Frameworks */,
+				76639FA1288D724F007B2E1F /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76639F94288D5578007B2E1F /* before */ = {
+			isa = PBXGroup;
+			children = (
+				76A169BD288A8CBA008CC5C1 /* DefaultDesign.swift */,
+				76639F9B288D684C007B2E1F /* Quates.swift */,
+				76A169CC288AB0DD008CC5C1 /* Tamagotchi.swift */,
+				76A169C6288A8EED008CC5C1 /* SelectTamagotchi */,
+			);
+			path = before;
+			sourceTree = "<group>";
+		};
 		76A1699D288A79A7008CC5C1 = {
 			isa = PBXGroup;
 			children = (
@@ -70,35 +91,28 @@
 		76A169A8288A79A7008CC5C1 /* Growing Tamagotchi */ = {
 			isa = PBXGroup;
 			children = (
-				76A169C6288A8EED008CC5C1 /* SelectTamagotchi */,
-				76A169C1288A8D9C008CC5C1 /* Launch */,
+				76A169B7288A79A8008CC5C1 /* Info.plist */,
 				76A169A9288A79A7008CC5C1 /* AppDelegate.swift */,
 				76A169AB288A79A7008CC5C1 /* SceneDelegate.swift */,
-				76A169AD288A79A7008CC5C1 /* ViewController.swift */,
-				76A169AF288A79A7008CC5C1 /* Main.storyboard */,
 				76A169B2288A79A8008CC5C1 /* Assets.xcassets */,
-				76A169BD288A8CBA008CC5C1 /* DefaultDesign.swift */,
-				76A169B7288A79A8008CC5C1 /* Info.plist */,
+				76639F94288D5578007B2E1F /* before */,
+				76A169B4288A79A8008CC5C1 /* LaunchScreen.storyboard */,
+				76639F95288D55D6007B2E1F /* Main.storyboard */,
 			);
 			path = "Growing Tamagotchi";
-			sourceTree = "<group>";
-		};
-		76A169C1288A8D9C008CC5C1 /* Launch */ = {
-			isa = PBXGroup;
-			children = (
-				76A169B4288A79A8008CC5C1 /* LaunchScreen.storyboard */,
-			);
-			path = Launch;
 			sourceTree = "<group>";
 		};
 		76A169C6288A8EED008CC5C1 /* SelectTamagotchi */ = {
 			isa = PBXGroup;
 			children = (
 				76A169C2288A8E64008CC5C1 /* SelectTamagotchi.storyboard */,
-				76A169CC288AB0DD008CC5C1 /* Tamagotchi.swift */,
+				76639F97288D58CB007B2E1F /* growingTamagotchiViewController.swift */,
+				76639F99288D5A22007B2E1F /* SettingTableViewController.swift */,
+				76639FA7288D83F0007B2E1F /* calculatorLevel.swift */,
 				76A169C4288A8E7B008CC5C1 /* SelectTamagotchiCollectionViewController.swift */,
 				76A169C7288A8F05008CC5C1 /* SelectTamagotchiCollectionViewCell.swift */,
 				76A169CA288AA652008CC5C1 /* AlertViewController.swift */,
+				76639FA5288D7E62007B2E1F /* SettingTableViewCell.swift */,
 			);
 			path = SelectTamagotchi;
 			sourceTree = "<group>";
@@ -120,7 +134,8 @@
 			);
 			name = "Growing Tamagotchi";
 			packageProductDependencies = (
-				76A169CF288AB45D008CC5C1 /* Toast */,
+				76639FA0288D724F007B2E1F /* IQKeyboardManagerSwift */,
+				76639FA3288D72A4007B2E1F /* Toast */,
 			);
 			productName = "Growing Tamagotchi";
 			productReference = 76A169A6288A79A7008CC5C1 /* Growing Tamagotchi.app */;
@@ -151,7 +166,8 @@
 			);
 			mainGroup = 76A1699D288A79A7008CC5C1;
 			packageReferences = (
-				76A169CE288AB45D008CC5C1 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				76639F9F288D724F007B2E1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				76639FA2288D72A4007B2E1F /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 76A169A7288A79A7008CC5C1 /* Products */;
 			projectDirPath = "";
@@ -170,7 +186,7 @@
 				76A169B6288A79A8008CC5C1 /* LaunchScreen.storyboard in Resources */,
 				76A169C3288A8E64008CC5C1 /* SelectTamagotchi.storyboard in Resources */,
 				76A169B3288A79A8008CC5C1 /* Assets.xcassets in Resources */,
-				76A169B1288A79A7008CC5C1 /* Main.storyboard in Resources */,
+				76639F96288D55D6007B2E1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,12 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76639FA6288D7E62007B2E1F /* SettingTableViewCell.swift in Sources */,
 				76A169C5288A8E7B008CC5C1 /* SelectTamagotchiCollectionViewController.swift in Sources */,
 				76A169CB288AA652008CC5C1 /* AlertViewController.swift in Sources */,
-				76A169AE288A79A7008CC5C1 /* ViewController.swift in Sources */,
 				76A169BE288A8CBA008CC5C1 /* DefaultDesign.swift in Sources */,
 				76A169CD288AB0DD008CC5C1 /* Tamagotchi.swift in Sources */,
+				76639F9C288D684C007B2E1F /* Quates.swift in Sources */,
+				76639FA8288D83F0007B2E1F /* calculatorLevel.swift in Sources */,
 				76A169C8288A8F05008CC5C1 /* SelectTamagotchiCollectionViewCell.swift in Sources */,
+				76639F98288D58CB007B2E1F /* growingTamagotchiViewController.swift in Sources */,
+				76639F9A288D5A22007B2E1F /* SettingTableViewController.swift in Sources */,
 				76A169AA288A79A7008CC5C1 /* AppDelegate.swift in Sources */,
 				76A169AC288A79A7008CC5C1 /* SceneDelegate.swift in Sources */,
 			);
@@ -195,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		76A169AF288A79A7008CC5C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76A169B0288A79A7008CC5C1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		76A169B4288A79A8008CC5C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,7 +353,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "다마고치 키우기";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SelectTamagotchi;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -372,7 +384,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "다마고치 키우기";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SelectTamagotchi;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -414,7 +426,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		76A169CE288AB45D008CC5C1 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+		76639F9F288D724F007B2E1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		76639FA2288D72A4007B2E1F /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
 			requirement = {
@@ -425,9 +445,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		76A169CF288AB45D008CC5C1 /* Toast */ = {
+		76639FA0288D724F007B2E1F /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 76A169CE288AB45D008CC5C1 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			package = 76639F9F288D724F007B2E1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		76639FA3288D72A4007B2E1F /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76639FA2288D72A4007B2E1F /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
