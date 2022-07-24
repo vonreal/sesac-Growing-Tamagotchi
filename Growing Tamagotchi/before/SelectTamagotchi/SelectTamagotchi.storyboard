@@ -522,20 +522,48 @@
             </objects>
             <point key="canvasLocation" x="6912" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--Name Setting View Controller-->
         <scene sceneID="H2y-Sc-lDu">
             <objects>
-                <viewController id="2fO-TK-dVQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NameSettingViewController" id="2fO-TK-dVQ" customClass="NameSettingViewController" customModule="Growing_Tamagotchi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="woH-I0-CHz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Bk-Tq-g1j">
+                                <rect key="frame" x="16" y="76" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg1-2h-ifI">
+                                <rect key="frame" x="16" y="114" width="382" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="JDv-gd-XgJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EwS-Tl-0MZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Bk-Tq-g1j" firstAttribute="leading" secondItem="EwS-Tl-0MZ" secondAttribute="leading" constant="16" id="Bu0-fe-TSD"/>
+                            <constraint firstItem="Qg1-2h-ifI" firstAttribute="top" secondItem="1Bk-Tq-g1j" secondAttribute="bottom" constant="4" id="CJF-cv-aQV"/>
+                            <constraint firstItem="EwS-Tl-0MZ" firstAttribute="trailing" secondItem="Qg1-2h-ifI" secondAttribute="trailing" constant="16" id="evm-mB-xl0"/>
+                            <constraint firstItem="EwS-Tl-0MZ" firstAttribute="trailing" secondItem="1Bk-Tq-g1j" secondAttribute="trailing" constant="16" id="iso-Eu-OVB"/>
+                            <constraint firstItem="Qg1-2h-ifI" firstAttribute="leading" secondItem="EwS-Tl-0MZ" secondAttribute="leading" constant="16" id="o4p-5S-jx7"/>
+                            <constraint firstItem="1Bk-Tq-g1j" firstAttribute="top" secondItem="EwS-Tl-0MZ" secondAttribute="top" constant="32" id="x7S-ec-Wew"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lineLabel" destination="Qg1-2h-ifI" id="EZr-Jg-y6z"/>
+                        <outlet property="userinputTextField" destination="1Bk-Tq-g1j" id="pov-8p-1Vm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wm5-xD-yvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7771" y="147"/>
+            <point key="canvasLocation" x="7662" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YAS-9b-RGh">

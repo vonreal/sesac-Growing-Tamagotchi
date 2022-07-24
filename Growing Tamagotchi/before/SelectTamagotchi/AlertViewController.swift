@@ -83,10 +83,13 @@ class AlertViewController: UIViewController {
     }
     
     @IBAction func startButtonClicked(_ sender: UIButton) {
+        UserDefaults.standard.set(true, forKey: SaveKey.save)
+        
         let sb = UIStoryboard(name: "SelectTamagotchi", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: growingTamagotchiViewController.identifier) as! growingTamagotchiViewController
         
         let nav = UINavigationController(rootViewController: vc)
+        UserDefaults.standard.set(tamagotchiNameLabel.text, forKey: SaveKey.tamagotchi)
         nav.modalPresentationStyle = .fullScreen
         self.present(nav, animated: false)
     }

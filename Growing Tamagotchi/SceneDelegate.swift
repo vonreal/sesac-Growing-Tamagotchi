@@ -13,7 +13,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let save = UserDefaults.standard.bool(forKey: SaveKey.save)
+        
+        guard let scene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: scene)
+        
+        if save {
+            let sb = UIStoryboard(name: "SelectTamagotchi", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: growingTamagotchiViewController.identifier) as! growingTamagotchiViewController
+            
+            window?.rootViewController = UINavigationController(rootViewController: vc)
+        } else {
+            let sb = UIStoryboard(name: "SelectTamagotchi", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "SelectTamagotchiCollectionViewController") as! SelectTamagotchiCollectionViewController
+            
+            window?.rootViewController = UINavigationController(rootViewController: vc)
+        }
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

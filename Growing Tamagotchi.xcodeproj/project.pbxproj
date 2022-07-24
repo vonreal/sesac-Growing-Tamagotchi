@@ -15,6 +15,7 @@
 		76639FA4288D72A4007B2E1F /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 76639FA3288D72A4007B2E1F /* Toast */; };
 		76639FA6288D7E62007B2E1F /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76639FA5288D7E62007B2E1F /* SettingTableViewCell.swift */; };
 		76639FA8288D83F0007B2E1F /* calculatorLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76639FA7288D83F0007B2E1F /* calculatorLevel.swift */; };
+		76639FAA288D8C05007B2E1F /* NameSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76639FA9288D8C05007B2E1F /* NameSettingViewController.swift */; };
 		76A169AA288A79A7008CC5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169A9288A79A7008CC5C1 /* AppDelegate.swift */; };
 		76A169AC288A79A7008CC5C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A169AB288A79A7008CC5C1 /* SceneDelegate.swift */; };
 		76A169B3288A79A8008CC5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A169B2288A79A8008CC5C1 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		76639F9B288D684C007B2E1F /* Quates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quates.swift; sourceTree = "<group>"; };
 		76639FA5288D7E62007B2E1F /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		76639FA7288D83F0007B2E1F /* calculatorLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorLevel.swift; sourceTree = "<group>"; };
+		76639FA9288D8C05007B2E1F /* NameSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSettingViewController.swift; sourceTree = "<group>"; };
 		76A169A6288A79A7008CC5C1 /* Growing Tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Growing Tamagotchi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A169A9288A79A7008CC5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A169AB288A79A7008CC5C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				76A169C7288A8F05008CC5C1 /* SelectTamagotchiCollectionViewCell.swift */,
 				76A169CA288AA652008CC5C1 /* AlertViewController.swift */,
 				76639FA5288D7E62007B2E1F /* SettingTableViewCell.swift */,
+				76639FA9288D8C05007B2E1F /* NameSettingViewController.swift */,
 			);
 			path = SelectTamagotchi;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				76A169CD288AB0DD008CC5C1 /* Tamagotchi.swift in Sources */,
 				76639F9C288D684C007B2E1F /* Quates.swift in Sources */,
 				76639FA8288D83F0007B2E1F /* calculatorLevel.swift in Sources */,
+				76639FAA288D8C05007B2E1F /* NameSettingViewController.swift in Sources */,
 				76A169C8288A8F05008CC5C1 /* SelectTamagotchiCollectionViewCell.swift in Sources */,
 				76639F98288D58CB007B2E1F /* growingTamagotchiViewController.swift in Sources */,
 				76639F9A288D5A22007B2E1F /* SettingTableViewController.swift in Sources */,

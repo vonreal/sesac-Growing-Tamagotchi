@@ -36,13 +36,16 @@ class growingTamagotchiViewController: UIViewController {
     
     @IBOutlet weak var mainview: UIView!
     
+    
+    let dic: [String:Int] = ["따끔따끔 다마고치":1, "방실방실 다마고치":2, "반짝반짝 다마고치":3]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // [네비게이션 아이템 바]
         // 0. 네비게이션 타이틀
         let nickname = UserDefaults.standard.string(forKey: "nickname")
-        navigationItem.title = "\(nickname ?? "고래밥")님의 다마고치"
+        navigationItem.title = "\(nickname ?? "대장")님의 다마고치"
         
         // 1. 네비게이션 버튼
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: .plain, target: self, action: #selector(openSetting))
@@ -67,14 +70,16 @@ class growingTamagotchiViewController: UIViewController {
         
         
         // [데이터 적용 - 임시 테스트]
+        let name = UserDefaults.standard.string(forKey: SaveKey.tamagotchi)
+        
         speechBubleImageView.image = UIImage(named: "bubble")
         speechBubbleContentLabel.text = Quates.lifeQuates[Int.random(in: 0..<Quates.lifeQuates.count)]
         speechBubbleContentLabel.textAlignment = .center
         speechBubbleContentLabel.font = .boldSystemFont(ofSize: DefaultDesign.fontSizeMin)
         speechBubbleContentLabel.textColor = DefaultDesign.basicColor
-        tamagotchiImageView.image = UIImage(named: "2-\(Int.random(in: 1...9))")
+        
         designtNameView(view: tamagotchiNameView, label: tamagotchiNameLabel)
-        tamagotchiNameLabel.text = "방실방실 다마고치"
+        tamagotchiNameLabel.text = UserDefaults.standard.string(forKey: SaveKey.tamagotchi)
         
         for label in midPointLabels {
             label.text = "·"
@@ -86,7 +91,19 @@ class growingTamagotchiViewController: UIViewController {
         let riceCount = UserDefaults.standard.integer(forKey: "riceCount")
         let waterCount = UserDefaults.standard.integer(forKey: "waterCount")
         
-        levelLabel.text = "LV\(level)"
+        var lev = level
+        if level == 10 { lev = 9 }
+        if level == 0 { lev = 1 }
+
+        if let n = name {
+            print(n, dic[n]!, level)
+            tamagotchiImageView.image = UIImage(named: "\(dic[n]!)-\(lev)")
+            print("\(dic[n]!)-\(level)")
+        } else {
+            tamagotchiImageView.image = UIImage(named: "1-\(lev)")
+        }
+        
+        levelLabel.text = "LV\(getLevel(riceCount: riceCount, waterCount: waterCount))"
         riceCountLabel.text = "밥알 \(riceCount)개"
         waterCountLabel.text = "물방울 \(waterCount)개"
         
@@ -136,6 +153,11 @@ class growingTamagotchiViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let nickname = UserDefaults.standard.string(forKey: "nickname")
+        navigationItem.title = "\(nickname ?? "대장")님의 다마고치"
+    }
+    
     @objc func openSetting() {
         // 네비게이션 바 열어주기
         let sb = UIStoryboard(name: "SelectTamagotchi", bundle: nil)
@@ -168,7 +190,21 @@ class growingTamagotchiViewController: UIViewController {
         
         let waterCount =  UserDefaults.standard.integer(forKey: "waterCount")
         let level = getLevel(riceCount: riceCount, waterCount: waterCount)
+        UserDefaults.standard.set(level, forKey: SaveKey.level)
         levelLabel.text = "LV\(level)"
+        
+        // 이미지 변경
+        let name = UserDefaults.standard.string(forKey: SaveKey.tamagotchi)
+        var lev = level
+        if level == 10 { lev = 9 }
+        if level == 0 { lev = 1 }
+        if let n = name {
+            print(n, dic[n]!, level)
+            tamagotchiImageView.image = UIImage(named: "\(dic[n]!)-\(lev)")
+            print("\(dic[n]!)-\(lev)")
+        } else {
+            tamagotchiImageView.image = UIImage(named: "1-\(lev)")
+        }
         
     }
     
@@ -195,6 +231,20 @@ class growingTamagotchiViewController: UIViewController {
         let riceCount =  UserDefaults.standard.integer(forKey: "riceCount")
         let level = getLevel(riceCount: riceCount, waterCount: waterCount)
         levelLabel.text = "LV\(level)"
+        
+        
+        // 이미지 변경
+        let name = UserDefaults.standard.string(forKey: SaveKey.tamagotchi)
+        var lev = level
+        if level == 10 { lev = 9 }
+        if level == 0 { lev = 1 }
+        if let n = name {
+            print(n, dic[n]!, level)
+            tamagotchiImageView.image = UIImage(named: "\(dic[n]!)-\(lev)")
+            print("\(dic[n]!)-\(level)")
+        } else {
+            tamagotchiImageView.image = UIImage(named: "1-\(lev)")
+        }
     }
     
     
