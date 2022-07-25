@@ -15,6 +15,7 @@ struct DefaultDesign {
     static let fontSizeMax = 15.0
     static let foodButtonIcon = "drop.circle"
     static let waterButtonIcon = "leaf.circle"
+    static let oepnSettingButtonIcon = "person.circle"
 }
 
 func designtNameView(view: UIView, label: UILabel) {

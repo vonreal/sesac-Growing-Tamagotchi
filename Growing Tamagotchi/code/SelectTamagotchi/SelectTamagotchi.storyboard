@@ -214,13 +214,13 @@
                     <connections>
                         <outlet property="alertView" destination="Zox-HA-E1X" id="xnf-KF-Zsi"/>
                         <outlet property="cancleButton" destination="BSE-Fg-FB6" id="uBp-Pw-a7G"/>
-                        <outlet property="line2Label" destination="Xug-oX-FvD" id="Q6w-U1-8jD"/>
-                        <outlet property="lineLabel" destination="xcb-Ia-5CO" id="MoZ-UH-zQe"/>
                         <outlet property="startButton" destination="I9y-3R-0U4" id="hqm-9F-4OV"/>
                         <outlet property="tamagotchiImageView" destination="YUi-f2-3Jf" id="uMW-fF-mLI"/>
                         <outlet property="tamagotchiInfoLabel" destination="8dr-PZ-WSk" id="Pwz-0T-Hhk"/>
                         <outlet property="tamagotchiNameLabel" destination="ay8-36-iOl" id="2UI-kI-9p9"/>
                         <outlet property="tamagotchiNameView" destination="ngC-EL-21c" id="RG9-5W-GzO"/>
+                        <outletCollection property="lineLabels" destination="xcb-Ia-5CO" collectionClass="NSMutableArray" id="k5P-ul-0TB"/>
+                        <outletCollection property="lineLabels" destination="Xug-oX-FvD" collectionClass="NSMutableArray" id="5lB-pV-8zR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgF-Vx-tzZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -331,9 +331,6 @@
                                                 <rect key="frame" x="39" y="0.0" width="79" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="textFieldDoneClicked:" destination="LeD-Ui-7W0" eventType="editingDidEndOnExit" id="fYp-mW-m6m"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6s-i1-EB0">
                                                 <rect key="frame" x="0.0" y="37" width="157.5" height="1"/>
@@ -381,9 +378,6 @@
                                                 <rect key="frame" x="39" y="0.0" width="79" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="textFieldDoneClicked:" destination="LeD-Ui-7W0" eventType="editingDidEnd" id="XJx-rG-42d"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -9,6 +9,8 @@ import UIKit
 import Toast
 
 class SelectTamagotchiCollectionViewController: UICollectionViewController {
+    
+    static let identifier = "SelectTamagotchiCollectionViewController"
 
     let tamagotchInfos = TamagotchiInfo().tamagotchiList
     let defaultTamagotch = TamagotchiInfo().defaultTamagotchi
@@ -26,6 +28,7 @@ class SelectTamagotchiCollectionViewController: UICollectionViewController {
     }
     
     // MARK: - 아이템의 데이터
+    // 3개의 다마고치는 이미지와 이름 정보가 있으며 이외의 다마고치는 준비중 이미지로 설정한다.
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SelectTamagotchiCollectionViewCell.identifier, for: indexPath) as? SelectTamagotchiCollectionViewCell else { print("Not found SelectTamagotchiCollectionViewCell"); return UICollectionViewCell()}
         
@@ -43,8 +46,10 @@ class SelectTamagotchiCollectionViewController: UICollectionViewController {
     }
     
     // MARK: - [디자인] 셀 크기, 사이 간격 등의 디자인 요소 설정
+    // iPhone 8, iPhone 13 mini & pro max, iPhone 11 확인
     func designCollectionView() {
         navigationItem.title = "다마고치 선택하기"
+        
         let layout = UICollectionViewFlowLayout()
         let spacing: CGFloat = 11
         let width = UIScreen.main.bounds.width - (spacing * 4)
@@ -59,9 +64,10 @@ class SelectTamagotchiCollectionViewController: UICollectionViewController {
         collectionView.backgroundView?.backgroundColor = DefaultDesign.backgroundColor
     }
     
+    // 모달방식으로 애니메이션이 있는 화면전환, 준비중인 다마고치는 토스트 메시지 1개만을 띄운다.
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "SelectTamagotchi", bundle: nil)
-        guard let vc = sb.instantiateViewController(withIdentifier: AlertViewController.identifier) as? AlertViewController else { print("Not found AlertViewController"); return }
+        guard let vc = sb.instantiateViewController(withIdentifier: AlertViewController.identifier) as? AlertViewController else { print("Not found \(AlertViewController.identifier)"); return }
         
         if indexPath.row < tamagotchInfos.count {
             let tamagotchInfo = tamagotchInfos[indexPath.row]
