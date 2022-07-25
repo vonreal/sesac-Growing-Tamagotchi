@@ -36,8 +36,8 @@ class NameSettingViewController: UIViewController {
     }
     func designTextField() {
         let nickname = UserDefaults.standard.string(forKey: SaveKey.nickname)
-        userinputTextField.designTextField(placeholder: "대장님의 이름을 입력해주세요")
-        userinputTextField.textAlignment = .left
+        userinputTextField.placeholder = "대장님의 이름을 입력해주세요."
+        userinputTextField.borderStyle = .none
         userinputTextField.text = nickname ?? "대장"
     }
     
@@ -47,6 +47,7 @@ class NameSettingViewController: UIViewController {
         
         if text.count < 2 || text.count > 6 {
             view.makeToast("2글자 이상 6글자 이하까지 가능합니다.")
+            view.endEditing(true)
             return
         }
         UserDefaults.standard.set(userinputTextField.text, forKey: SaveKey.nickname)

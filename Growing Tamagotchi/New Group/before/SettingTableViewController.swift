@@ -50,6 +50,8 @@ class SettingTableViewController: UITableViewController {
         cell.imageView?.image = UIImage(systemName: settingImage[indexPath.row])
         cell.imageView?.tintColor = DefaultDesign.basicColor
         
+        cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
         cell.backgroundColor = .clear
         
         if indexPath.row == 0 {

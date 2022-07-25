@@ -86,6 +86,7 @@ class growingTamagotchiViewController: UIViewController {
         }
     }
     func designNavigationBar() {
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: DefaultDesign.basicColor]
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: DefaultDesign.oepnSettingButtonIcon), style: .plain, target: self, action: #selector(openSetting))
         
         navigationController?.navigationBar.barTintColor = DefaultDesign.basicColor
@@ -159,6 +160,7 @@ class growingTamagotchiViewController: UIViewController {
         designLabel()
         designTamagotchi()
         setSpeechBubble()
+        view.endEditing(true)
         
     }
     @IBAction func waterButtonClicked(_ sender: UIButton) {
@@ -169,6 +171,7 @@ class growingTamagotchiViewController: UIViewController {
         designLabel()
         designTamagotchi()
         setSpeechBubble()
+        view.endEditing(true)
     }
     
     func getIntByTextFieldText(limit: Int, textField: UITextField) -> Int {
