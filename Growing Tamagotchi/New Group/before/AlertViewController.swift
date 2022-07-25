@@ -94,13 +94,16 @@ class AlertViewController: UIViewController {
         // 다마고치 이름 저장
         UserDefaults.standard.set(tamagotchiNameLabel.text, forKey: SaveKey.tamagotchi)
         
-        // 화면전환 (버튼을 클릭하면 되돌아갈 수 없는데 초기화를 하는 것이 좋은지 현재가 좋은지 고민해보기)
+        
+        // 다마고치 변경에서 화면이 무한하게 쌓일 수 있기 때문에 루트뷰를 변경하도록 설정
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let sceneDelegate = windowScene?.delegate as? SceneDelegate
+        
         let sb = UIStoryboard(name: "SelectTamagotchi", bundle: nil)
         guard let vc = sb.instantiateViewController(withIdentifier: growingTamagotchiViewController.identifier) as? growingTamagotchiViewController else { print("Not found \(growingTamagotchiViewController.identifier)"); return }
         
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        self.present(nav, animated: false)
+        sceneDelegate?.window?.rootViewController = UINavigationController(rootViewController: vc)
+        sceneDelegate?.window?.makeKeyAndVisible()
     }
     
 }
