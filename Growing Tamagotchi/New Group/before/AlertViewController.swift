@@ -63,8 +63,11 @@ class AlertViewController: UIViewController {
         cancleButton.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMaxYCorner]
         cancleButton.layer.cornerRadius = 5
         
-        
-        startButton.setTitle("시작하기", for: .normal)
+        if (UserDefaults.standard.bool(forKey: SaveKey.save)) {
+            startButton.setTitle("변경하기", for: .normal)
+        } else {
+            startButton.setTitle("시작하기", for: .normal)
+        }
         startButton.setTitleColor(DefaultDesign.basicColor, for: .normal)
     }
     func designTamagotchi() {
