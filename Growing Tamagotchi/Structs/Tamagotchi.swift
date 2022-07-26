@@ -35,7 +35,6 @@ struct SaveKey {
     static let nickname = "nickname"
     static let tamagotchi = "tamagotchi"
     static let save = "save"
-    static let level = "level"
     static let riceCount = "riceCount"
     static let waterCount = "waterCount"
 }

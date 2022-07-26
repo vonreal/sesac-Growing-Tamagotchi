@@ -93,6 +93,7 @@ class growingTamagotchiViewController: UIViewController {
         navigationController?.navigationBar.tintColor = DefaultDesign.basicColor
         navigationController?.navigationBar.scrollEdgeAppearance = UINavigationBarAppearance()
         navigationController?.navigationBar.scrollEdgeAppearance?.backgroundColor = DefaultDesign.backgroundColor
+        
     }
     func designSpeechBubble() {
         speechBubleImageView.image = UIImage(named: "bubble")
