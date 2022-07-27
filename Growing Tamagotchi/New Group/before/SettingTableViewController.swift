@@ -23,7 +23,7 @@ class SettingTableViewController: UITableViewController {
     
     // 바뀐 데이터 적용
     override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
+        tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .fade)
     }
     
     // MARK: [디자인]
