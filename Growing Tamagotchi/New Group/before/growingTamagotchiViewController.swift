@@ -183,8 +183,8 @@ class growingTamagotchiViewController: UIViewController {
             view.endEditing(true)
             return 0
         }
-        if num > limit {
-            view.makeToast("한번에 \(limit) 미만만 입력이 가능합니다.")
+        if num >= limit {
+            view.makeToast("한번에 \(limit)개 미만만 입력이 가능합니다.")
             textField.text = String(limit - 1)
             view.endEditing(true)
             return 0
