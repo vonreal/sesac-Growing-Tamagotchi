@@ -43,14 +43,14 @@ class NameSettingViewController: UIViewController {
     
     // MARK: - [클릭시]
     @objc func saveName() {
-        guard let text = userinputTextField.text else { return }
-        
-        if text.count < 2 || text.count > 6 {
+        guard let nickname = userinputTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
+                (2...6).contains(nickname.count)
+        else {
             view.makeToast("2글자 이상 6글자 이하까지 가능합니다.")
             view.endEditing(true)
             return
         }
-        UserDefaults.standard.set(userinputTextField.text, forKey: SaveKey.nickname)
+        UserDefaults.standard.set(nickname, forKey: SaveKey.nickname)
         self.navigationController?.popViewController(animated: true)
     }
 }
