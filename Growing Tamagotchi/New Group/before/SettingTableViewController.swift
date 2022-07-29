@@ -85,7 +85,7 @@ class SettingTableViewController: UITableViewController {
         case 2:
             let alert = UIAlertController(title: "데이터 초기화", message: "정말 처음부터 다시 시작하시겠습니까?", preferredStyle: .alert)
             
-            let yes = UIAlertAction(title: "예", style: .default) { yes in
+            let yes = UIAlertAction(title: "예", style: .destructive) { yes in
                 UserDefaults.standard.set(false, forKey: SaveKey.save)
                 
                 // 유저디폴트 일괄 초기화
@@ -102,7 +102,7 @@ class SettingTableViewController: UITableViewController {
                 sceneDelegate?.window?.rootViewController = UINavigationController(rootViewController: vc)
                 sceneDelegate?.window?.makeKeyAndVisible()
             }
-            let no = UIAlertAction(title: "아니오", style: .destructive)
+            let no = UIAlertAction(title: "아니오", style: .default)
                         
             alert.addAction(no)
             alert.addAction(yes)

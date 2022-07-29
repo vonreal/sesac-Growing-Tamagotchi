@@ -40,7 +40,7 @@ class growingTamagotchiViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         designUI()
     }
     
@@ -107,7 +107,7 @@ class growingTamagotchiViewController: UIViewController {
         var level = getLevel(riceCount: riceCount, waterCount: waterCount)
         level = (level >= 10) ? 9 : level
         
-        tamagotchiNameLabel.text = UserDefaults.standard.string(forKey: SaveKey.tamagotchi)
+        tamagotchiNameLabel.text = tamagotchiName
         designtNameView(view: tamagotchiNameView, label: tamagotchiNameLabel)
         
         if let name = tamagotchiName {
