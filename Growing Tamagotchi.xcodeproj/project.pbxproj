@@ -28,7 +28,6 @@
 		76ACBB4E288E8F0A005ECC95 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ACBB46288E8F0A005ECC95 /* AlertViewController.swift */; };
 		76ACBB4F288E8F0A005ECC95 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ACBB47288E8F0A005ECC95 /* SettingTableViewController.swift */; };
 		76ACBB50288E8F0A005ECC95 /* growingTamagotchiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ACBB48288E8F0A005ECC95 /* growingTamagotchiViewController.swift */; };
-		76ACBB51288E8F0A005ECC95 /* calculatorLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ACBB49288E8F0A005ECC95 /* calculatorLevel.swift */; };
 		76ACBB52288E8F0A005ECC95 /* SelectTamagotchiCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ACBB4A288E8F0A005ECC95 /* SelectTamagotchiCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		76ACBB46288E8F0A005ECC95 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		76ACBB47288E8F0A005ECC95 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		76ACBB48288E8F0A005ECC95 /* growingTamagotchiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = growingTamagotchiViewController.swift; sourceTree = "<group>"; };
-		76ACBB49288E8F0A005ECC95 /* calculatorLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculatorLevel.swift; sourceTree = "<group>"; };
 		76ACBB4A288E8F0A005ECC95 /* SelectTamagotchiCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTamagotchiCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				76ACBB46288E8F0A005ECC95 /* AlertViewController.swift */,
-				76ACBB49288E8F0A005ECC95 /* calculatorLevel.swift */,
 				76ACBB48288E8F0A005ECC95 /* growingTamagotchiViewController.swift */,
 				76ACBB45288E8F0A005ECC95 /* NameSettingViewController.swift */,
 				76ACBB43288E8F0A005ECC95 /* SelectTamagotchiCollectionViewCell.swift */,
@@ -224,7 +221,6 @@
 				76ACBB4F288E8F0A005ECC95 /* SettingTableViewController.swift in Sources */,
 				76ACBB52288E8F0A005ECC95 /* SelectTamagotchiCollectionViewController.swift in Sources */,
 				76ACBB4C288E8F0A005ECC95 /* SettingTableViewCell.swift in Sources */,
-				76ACBB51288E8F0A005ECC95 /* calculatorLevel.swift in Sources */,
 				76ACBB50288E8F0A005ECC95 /* growingTamagotchiViewController.swift in Sources */,
 				76ACBB36288E8E20005ECC95 /* UIView+Extension.swift in Sources */,
 				76ACBB3E288E8E84005ECC95 /* Tamagotchi.swift in Sources */,
