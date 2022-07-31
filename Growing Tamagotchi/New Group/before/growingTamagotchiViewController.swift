@@ -46,6 +46,7 @@ class growingTamagotchiViewController: UIViewController {
     
     // 뷰가 보여질때마다 닉네임과 다마고치 이야기 새로고침
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let nickname = UserDefaults.standard.string(forKey: SaveKey.nickname)
         
         setSpeechBubble()

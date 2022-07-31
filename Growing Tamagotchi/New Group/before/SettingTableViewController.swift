@@ -23,6 +23,7 @@ class SettingTableViewController: UITableViewController {
     
     // 바뀐 데이터 적용
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .fade)
     }
     
